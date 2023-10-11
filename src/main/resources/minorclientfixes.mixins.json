@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "me.mqrshie.minorclientfixes.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+   "BookEditScreenMixin",
+    "InGameHudMixin",
+    "PlayerEntityRendererMixin",
+    "RaidMixin",
+    "bookMixins.MixinBookEditScreen",
+    "bookMixins.MixinBookScreen",
+    "bookMixins.MixinLecternScreen"
+
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

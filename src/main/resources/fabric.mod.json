@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "minorclientfixes",
+  "version": "${version}",
+  "name": "minorclientfixes",
+  "description": "Fixes minor Minecraft vanilla bugs.",
+  "authors": ["Mqrshie"],
+  "contact": {
+    "repo": ""
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/minorclientfixes/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.mqrshie.minorclientfixes.client.MinorclientfixesClient"
+    ],
+    "main": [
+      "me.mqrshie.minorclientfixes.Minorclientfixes"
+    ]
+  },
+  "mixins": [
+    "minorclientfixes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
